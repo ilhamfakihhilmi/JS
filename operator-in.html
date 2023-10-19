@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In Operator</title>
+  </head>
+  <body>
+    <h1>In Operator</h1>
+    <li>
+      In opeator adalah operator yang bisa dilakukan untuk mengecek apakah
+      sebuah property ada di dalam object atau tidak
+    </li>
+    <li>
+      jika property tersebut ada di oject, maka hasilnya true, sedangkan jika
+      tidak maka hasilnya false
+    </li>
+    <li>
+      tidak hanya di object, In juga bisa dilakukan untuk mengecek index di
+      array
+    </li>
+    <h2>Peringatan</h2>
+    <li>
+      In operator hanya akan mengecek apakah property atau index ada atau tidak
+    </li>
+    <li>
+      jadi walaupun nilai property atau index nya undefined atau null, maka
+      tetap akan di anggap ada
+    </li>
+
+    <!-- PRAKTEK -->
+    <script>
+      const person = {
+        firstname: "fakih",
+        lastname: "hilmi",
+      };
+
+      const result = "firstname" in person; //true, karena data firstname ada
+      document.writeln(`<p>${result}</p>`);
+
+      if ("firstname" in person) {
+        alert(`Hello ${person.firstname}`);
+      } else {
+        alert("hello");
+      }
+
+      const orang = {
+        lastname: undefined,
+      };
+      const hasil = "lastname" in person;
+      document.writeln(`<p>${result}</p>`);
+      const nama = [null, "fakih", null];
+      const hasilNama = 0 in nama; // true, karena index nya ada atau tersedia maka di anggap true
+      document.writeln(`<p>${hasilNama}</p>`);
+    </script>
+  </body>
+</html>

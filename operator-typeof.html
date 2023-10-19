@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Typeof</title>
+  </head>
+  <body>
+    <h1>Operator Typeof</h1>
+    <li>
+      typeof merupakan operator yang bisa kita gunakan untuk melihat typedata
+      sebuah value atau variable
+    </li>
+    <li>
+      karena javascript merupakan dynamic language, jadi kita perlu mengecek
+      tipe data sebuah value atau variable menggunakan operator typeof
+    </li>
+    <li>hasil dari operator typeof adalah string tipedatanya</li>
+
+    <!-- PRAKTEK -->
+    <script>
+      let data = tur;
+
+      const typeData = typeof data;
+      document.writeln(`<p>${typeData}</p>`);
+
+      if (typeof data === "number") {
+        alert("Number");
+      } else if (typeof data === "string") {
+        alert("String");
+      } else if (typeof data === "boolean") {
+        alert("Boolean");
+      } else if (typeof data === "object") {
+        alert("Object");
+      }
+    </script>
+  </body>
+</html>

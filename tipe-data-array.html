@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+  </head>
+  <body>
+    <h1>Tipe Data Array</h1>
+    <li>array adalah tipe data yang berisikan kumpulan data</li>
+    <li>
+      array di javascript memiliki sifat dinamis, artinya datanya bisa bertambah
+      dengan sendirinya saat kita memasukan data ke dalam array
+    </li>
+
+    <h2>Cara kerja array</h2>
+    <li>
+      setiap data di array akan disimpan dalam posisi berurutan, dimana urutan
+      pertama dimulai dari nomer 0
+    </li>
+    <li>
+      setiap kita menambah data ke array, otomatis data akan disimpan di urutan
+      terakhir
+    </li>
+    <li>urutan di array, kita sebut dengan index</li>
+
+    <h2>Operasi di array</h2>
+    <li>array.push(value) = menambah data ke array</li>
+    <li>array.length = untuk mendapatkan panjang array</li>
+    <li>array[index] = mendapat data di posisi index</li>
+    <li>array[index] = value = mmengubah data di posisi index</li>
+    <li>
+      delete array[index] = menghapus data di posisi index, namun index tidak
+      bergeser
+    </li>
+
+    <h2>Perlu diingat</h2>
+    <li>data di dalam array tidak ada batasannya ahrus data apa</li>
+    <li>jadi kita bisa memasukan data apapun kedalam array</li>
+    <li>bahkan kita juga bisa memasukan array kedalam array kika kita mau</li>
+
+    <!-- PRAKTEK -->
+    <script>
+      let arrayKosong = [];
+      let arrayNama = ["Ilham", "Fakih", "Hilmi"];
+
+      const names = [];
+      names.push("ilham");
+      names.push("fakih", "hilmi");
+      names.push("programmer");
+      names.push(2023);
+
+      console.table(names);
+
+      console.info(names[0]);
+      console.info(names[1]);
+      console.info(names[2]);
+
+      names[0] = "Aih";
+      names[1] = "Aih2";
+      names[2] = "Aih3";
+
+      delete names[0];
+      names.push("ilham");
+      names[0] = "Aih";
+
+      //array didalam array
+      names.push(["fakih", "hilmi"]);
+
+      console.table(names);
+    </script>
+  </body>
+</html>

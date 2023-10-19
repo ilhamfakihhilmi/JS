@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      const name = "ilham fakih hilmi";
+      const age = 24;
+      const template = `Name : ${name}, age: ${age}`;
+      console.info(template);
+
+      const nilai = 77;
+      const template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+      console.info(template2);
+
+      const multiline = `nama saya ilham fakih,
+umur saya 24 tahun,
+saya adalah seorang programmer`;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>

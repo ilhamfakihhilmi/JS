@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Expression</title>
+  </head>
+  <body>
+    <h1>If Expression</h1>
+    <li>
+      dalam javascript, if adalah salah satu kata kunci yang digunakan untuk
+      percabangan
+    </li>
+    <li>
+      percabangan artinya kita bisa mengeksekusi kode program tertentu ketika
+      suatu kondisi terpenuhi
+    </li>
+    <li>hampir disemua bahasa pemrograman mendukung if expression</li>
+
+    <h2>Else Expression</h2>
+    <li>blok if akan dieksekusi ketika kondisi if bernilai true</li>
+    <li>
+      kadang kita ingin melakukan eksekusi program tertentu jika kondisi if
+      bernilai false
+    </li>
+    <li>hal ini bida dilakukan menggunakan else expression</li>
+    <h2>Else If Expression</h2>
+    <li>kadang dalam if, kita butuh membuat beberapa kondisi</li>
+    <li>
+      kasus seperti ini, di javascript kita bisa menggunakan else if expression
+    </li>
+    <br />
+    <br />
+    <!-- PRAKTEK -->
+    <script>
+      //   const nilai = 70;
+      //   if (nilai > 80) {
+      //     document.writeln("<p>selamat anda lulus</p>");
+      //   } else {
+      //     document.writeln("<p>tingkatkan belajar anda</p>");
+      //   }
+
+      const nilai = 40;
+      
+      if (nilai > 79) {
+        document.writeln("<p>selamat anda lulus dengan nilai A</p>");
+      } else if (nilai > 69) {
+        document.writeln("<p>selamat anda lulus dengan nilai B</p>");
+      } else if (nilai > 59) {
+        document.writeln("<p>selamat anda lulus dengan nilai C</p>");
+      } else {
+        document.writeln("<p>tingkatkan belajar anda</p>");
+      }
+    </script>
+  </body>
+</html>

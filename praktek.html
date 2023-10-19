@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Praktek</title>
+  </head>
+  <body>
+    <script>
+      const golonganA = 400;
+      const golonganB = 500;
+      const golonganC = 750;
+      const golonganD = 900;
+
+      const gaji = prompt("silahkan  masukan gaji anda");
+      if (gaji > 900) {
+        alert("ANDA MASUK KE GOLONGAN A");
+      } else if (gaji > 750) {
+        alert("ANDA MASUK KE GOLONGAN B");
+      } else if (gaji > 500) {
+        alert("ANDA MASUK KE GOLONGAN C");
+      } else if (gaji > 400) {
+        alert("ANDA MASUK KE GOLONGAN D");
+      } else if (gaji < 399) {
+        alert("gaji anda kurang dari minimum ketentuan, silahkan masukan data dengan benar");
+      } else {
+        alert("anda tidak masuk ke golongan manapun");
+      }
+    </script>
+  </body>
+</html>

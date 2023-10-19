@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe data obejct</title>
+  </head>
+  <body>
+    <h1>Tipe Data Object</h1>
+    <li>tipe data object adalah tipe data yang mirip dengan tipe data array</li>
+    <li>
+      yang membedakan adalah index pada tipe data object bisa menggunakan string
+    </li>
+    <li>
+      index di object biasanya disebut attribut atau properties, bukan index
+    </li>
+
+    <!-- PRAKTEK -->
+    <script>
+      //menambah atau mengubah property/attribute
+      const orang = {
+        nama: "ilham fakih hilmi",
+        alamat: "indonesia",
+        umur: 24,
+      };
+
+      //   orang["nama"] = "ilham fakih";
+      //   orang["alamat"] = "indonesia";
+      //   orang["umur"] = 24;
+
+      console.info(`Nama : ${orang.nama}`);
+      console.info(`Alamat : ${orang.alamat}`);
+      console.info(`Umur : ${orang.umur}`);
+
+      console.table(orang);
+
+      // menghapus property/attribute
+      delete orang["umur"];
+      console.table(orang);
+    </script>
+  </body>
+</html>
