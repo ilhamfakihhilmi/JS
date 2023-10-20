@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Nullish Coalescing</title>
+  </head>
+  <body>
+    <h1>Nullish Coalescing Operator</h1>
+    <li>nullish value adalah null dan undefined</li>
+    <li>
+      nullish Coalescing operator (??) adalah operator mirip dengan Ternary
+      Operator, yang membedakan adalah pada kondisi, jika bernilai null atau
+      undefined, baru value default nya diambil
+    </li>
+
+    <!-- PRAKTEK -->
+    <script>
+      let parameter;
+
+      //tanpa nullish coalescing operator
+      let data = parameter;
+      if (data === undefined || data === null) {
+        data = "nilai default";
+      }
+      document.writeln(`<p>${data}</p>`);
+
+      //dengan nullish coalescing operator
+
+      let param = "fakih"; // apabila nilai param null/undefiend maka akan menampilakn nilai default
+      let datas = param ?? "nilai default";
+      document.writeln(`<p>${datas}</p>`);
+    </script>
+  </body>
+</html>

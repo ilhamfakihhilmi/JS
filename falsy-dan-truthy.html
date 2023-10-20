@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falsy dan Truthy</title>
+  </head>
+  <body>
+    <h1>Falsy dan Truthy</h1>
+    <h2>Falsy</h2>
+    <li>
+      Falsy atau kadang ditulis falsey, adalah value yang ketika dalam konteks
+      boolean, dia dianggap false
+    </li>
+    <li>
+      ini dalah salah satu fitur dari javascript, yang digunakan namun kadang
+      juga sering membingungkan untuk pemula
+    </li>
+    <li>
+      jadi di javascript, kondisi itu tidak hanya bisa boolean, tapi diluar
+      boolean pun bisa, namun kita harus tahu beberapa data falsy, atau dianggap
+      false
+    </li>
+
+    <!-- PRAKTEK -->
+    <script>
+      let data = ""; // falsy apabila data kosong (false)
+      if (data) {
+        document.writeln("TRUE");
+      } else {
+        document.writeln("FALSE");
+      }
+    </script>
+  </body>
+</html>
