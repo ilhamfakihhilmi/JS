@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>do while loop</title>
+  </head>
+  <body>
+    <h1>Do While Loop</h1>
+    <li>do while loop adalah perulangan yang mirip dengan while</li>
+    <li>perbedaanya hanya pada pengecekan kondisi</li>
+    <li>
+      pengecekan kondisi di while loop dilakukan di awal sebelum perulangan
+      dilakukan, dedangkan do while loop dilakukan setelah perulangan dilakukan
+    </li>
+    <li>
+      oleh karena itu dalam do while loop, minimal pasti sekali perulangan
+      dilakukan walaupun kondisi tidak bernilai true
+    </li>
+    <li>
+      contoh penerapan biasa di terapkan pada menu, di tampilkan dulu kalau user
+      mau tutup maka dapat di tutup
+    </li>
+
+    <script>
+      let counter = 1;
+      do {
+        document.writeln(`<p>perulangan ke ${counter}</p>`);
+        counter++;
+      } while (counter <= 10);
+    </script>
+  </body>
+</html>

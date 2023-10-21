@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+  </head>
+  <body>
+    <h1>For Loop</h1>
+    <li>
+      for adalah salah satu kata kunci yang bisa digunakan untuk melakukan
+      perulangan
+    </li>
+    <li>
+      blok kode yang di dalam for akan selalu diulangi selama kondisi for
+      terpenuhi
+    </li>
+
+    <p>sintax perulangan For</p>
+    <p>for(init statement; kondisi; post statement) { //blok perulangan }</p>
+
+    <li>
+      init statement akan dieksekusi hanya sekali di awal sebelum perubahan
+    </li>
+    <li>
+      kondisi akan dilakukan pengecekan dalam setiap perulangan, jika true
+      perulangan akan dilakukan, jika false perulangan akan berhenti
+    </li>
+    <li>post statement akan dieksekusi setiap kali di akhir perulangan</li>
+    <li>
+      init statement, kondisi dan post satement tidak wajib diisi, berarti
+      kondisi selalu bernilai true
+    </li>
+
+    <li>
+      contoh biasa digunakan untuk melakukan query ke db, di display ke tabel
+    </li>
+
+    <!-- PRAKTEK -->
+    <br />
+    <script>
+      // kode perulangan tanpa henti
+      //   for (;;) {
+      //     alert("for loop");
+      //   }
+
+      document.writeln(`<strong>perulangan dengan kondisi</strong>`);
+      // perulangan dengan kondisi
+      let counter = 1;
+      for (; counter <= 10; ) {
+        document.writeln(`<p>pengulangan ke ${counter}</p>`);
+        counter++; //increment
+      }
+
+      document.writeln(
+        `<strong>kode perulangan dengan init statement</strong>`
+      );
+      //kode perulangan dengan init statement
+      for (let counters = 1; counters <= 10; ) {
+        document.writeln(`<p>pengulangan ke ${counters}</p>`);
+        counters++; //increment
+      }
+
+      document.writeln(
+        `<strong>kode perulangan dengan Post statement</strong>`
+      );
+      //kode perulangan dengan init statement
+      for (let counterx = 1; counterx <= 10; counterx++) {
+        document.writeln(`<p>pengulangan ke ${counterx}</p>`);
+      }
+    </script>
+  </body>
+</html>
